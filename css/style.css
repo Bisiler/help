@@ -29,3 +29,61 @@ body{
     background-position: bottom;
     clip-path: polygon(0 1%, 93% 0, 100% 100%, 3% 100%);
 }
+.text-box {
+    position: absolute;
+    top: 40%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.heading-primary {
+    text-transform: uppercase;
+}
+.heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    animation-name: helpme;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes helpme {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+        transform: translateY(-30px)
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+        transform: translatey(0)
+    }
+}
+.heading-primary-sub {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    animation-name: help1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes help1 {
+    0%{
+        opacity:0;
+        transform: translateX(100px);
+        transform: rotateY(100px)
+    }
+    80%{
+        transform: translateX(-20px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateX(0);
+        transform: rotateY(0);
+        
+    }
+}
